@@ -1,0 +1,42 @@
+.cases {
+  background-color: var(--main-bgc-color);
+  padding-bottom: 94px;
+  &__title {
+    font-size: 36px;
+    line-height: 1.16;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-color);
+    margin-bottom: 50px;
+}
+}
+
+.cases-list {
+  display: flex;
+  &__title {
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+  
+    width: 370px;
+    height: 70px;
+    color: var(--add-color);
+    background-color:rgba(47, 48, 58, 0.8);
+
+    position: absolute;
+    bottom:0;
+    left: 0;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.cases-list__item {
+  position: relative;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+}
