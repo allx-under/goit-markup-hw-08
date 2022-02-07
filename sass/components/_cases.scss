@@ -1,4 +1,5 @@
 .cases {
+  
   background-color: var(--main-bgc-color);
   padding-bottom: 94px;
   &__title {
@@ -8,8 +9,13 @@
     letter-spacing: 0.03em;
     color: var(--main-color);
     margin-bottom: 50px;
+  }
+  @media screen and (max-width:1199px){
+    display: none;
+
+  }
 }
-}
+
 
 .cases-list {
   display: flex;

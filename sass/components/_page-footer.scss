@@ -2,6 +2,7 @@
   background-color: var(--sec-bgc-color);
   padding-top: 60px;
   padding-bottom: 60px;
+  
 }
 
 .footer-logo {
@@ -10,9 +11,37 @@
 }
 
 .footer__container {
+  @media screen and (min-width:1200px){
+
   display: flex;
+  }
 }
 
+.logo-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width:1200px){
+    display: block;
+  }
+}
+
+@media screen and (min-width:768px){
+  .tablet-wrap {
+  display: flex;
+  justify-content: space-around;
+  }
+}
+
+
+.address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width:1200px) {
+    display: block;
+  }
+}
 .address__item {
   font-style: normal;
   font-size: 14px;
@@ -21,7 +50,10 @@
 }
 
 .address__item:not(:last-child) {
+  margin-bottom: 8px;
+  @media screen and (min-width:1200px){
   margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -38,7 +70,17 @@
 }
 
 .footer-subscribe {
-  margin-left: 70px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  @media screen and (min-width:768px){
+    margin-top: 0;
+  }
+  @media screen and (min-width:1200px){
+    margin-left: 70px;
+    display: block;
+  };
 }
 
 .subscribe__title {
@@ -50,8 +92,10 @@
   margin-bottom: 20px;
 }
 .subscribe-list {
-  display: flex;
-  justify-content: center;
+  @media screen and (min-width:1200px){
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .footer-socials__link {
@@ -62,7 +106,16 @@
 }
 
 .footer-form {
-  margin-left: 93px;
+  margin-top: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  @media screen and (min-width:1200px){
+    margin-left: 93px;
+    margin-top: 0;
+    display: block;
+  }
 }
 
 .footer-form__label {
@@ -78,16 +131,21 @@
 
 .footer-form__input {
   color:var(--add-color);
-  width: 358px;
+  width: 450px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3); 
   border-radius: 4px;
   background-color: transparent;
-  margin-right: 15px;
+  
   padding: 15px 16px;
   transition: outline var(--animation-duration) var(--animation-function);
   &:focus {
   outline: 1px solid var(--accent-color);
+  }
+  @media screen and (min-width:1200px) {
+    margin-right: 15px;
+    width: 358px;
+  
 }
 }
 
@@ -99,10 +157,18 @@
 
 .footer-form__wrap {
   display: flex;
+  flex-direction: column;
   align-items: center;
+  @media screen and (min-width:1200px) {
+    flex-direction: row;
+  }
 }
 
 .footer-form__btn {
+  margin-top: 20px;
   display: flex;
   align-items: center;
+  @media screen and (min-width:1200px){
+    margin-top: 0;
+  }
 }
