@@ -131,7 +131,7 @@
 
 .footer-form__input {
   color:var(--add-color);
-  width: 450px;
+  width: 100%;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3); 
   border-radius: 4px;
@@ -141,6 +141,9 @@
   transition: outline var(--animation-duration) var(--animation-function);
   &:focus {
   outline: 1px solid var(--accent-color);
+  }
+  @media screen and (min-width:768px) {
+    width: 450px;
   }
   @media screen and (min-width:1200px) {
     margin-right: 15px;
@@ -156,6 +159,7 @@
 }
 
 .footer-form__wrap {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
