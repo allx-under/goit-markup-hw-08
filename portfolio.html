@@ -30,14 +30,14 @@
         <nav class="header__nav">
           <ul class="list header-list">
             <li class="header-list__item">
-              <a class="header-list__link" href="./index.html">Студия</a>
+              <a
+                class="header-list__link"
+                href="./index.html"
+                >Студия</a
+              >
             </li>
             <li class="header-list__item">
-              <a
-                class="header-list__link header-list__link--active"
-                href="./portfolio.html"
-                >Портфолио</a
-              >
+              <a class="header-list__link header-list__link--active" href="./portfolio.html">Портфолио</a>
             </li>
             <li class="header-list__item">
               <a class="header-list__link" href="">Контакты</a>
@@ -62,6 +62,66 @@
             </a>
           </li>
         </ul>
+      </div>
+      <div class="container header-mobile">
+        <a class="logo" href="./index.html"
+          ><span class="logo__text">Web</span>Studio</a
+        >
+        <button class="mobile-open" type="button">
+          <svg class="mobile-icon" width="40" height="40">
+            <use class="mob-open" href="./images/icons.svg#mob-open"></use>
+          </svg>
+        </button>
+      </div>
+      <div class="mob-menu is-hidden">
+        <button class="mobile-close" type="button">
+          <svg class="mobile-icon" width="40" height="40">
+            <use class="mob-close" href="./images/icons.svg#mob-close"></use>
+          </svg>
+        </button>
+        <ul class="mob-menu-list">
+          <li class="mob-menu-list__item">
+            <a
+              class="mob-menu-list__link"
+              href="./index.html"
+              >Студия</a
+            >
+          </li>
+          <li class="mob-menu-list__item">
+            <a class="mob-menu-list__link mob-menu-list__link--active" href="./portfolio.html">Портфолио</a>
+          </li>
+          <li class="mob-menu-list__item">
+            <a class="mob-menu-list__link" href="">Контакты</a>
+          </li>
+        </ul>
+        <div class="mob-bottom">
+          <ul class="mob-contacts">
+            <li class="mob-contacts__item">
+              <a class="mob-contacts__link" href="mailto:info@devstudio.com">
+                info@devstudio.com
+              </a>
+            </li>
+            <li class="mob-contacts__item">
+              <a class="mob-contacts__link" href="tel:+380991111111">
+                +38 099 111 11 11
+              </a>
+            </li>
+          </ul>
+          <ul class="mob-socials">
+            <li class="mob-socials__item">
+              <a class="mob-socials__link" href="">Instagram </a>
+            </li>
+            <li class="mob-socials__item">
+              <a class="mob-socials__link" href="">Twitter </a>
+            </li>
+            <li class="mob-socials__item">
+              <a class="mob-socials__link" href="">Facebook </a>
+            </li>
+            <li class="mob-socials__item">
+              <a class="mob-socials__link" href="">LinkedIn </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
     <section class="portfolio">
@@ -88,7 +148,11 @@
           <li class="portfolio-list__item">
             <a class="portfolio-list__link" href=""
               ><div class="portfolio-card__overlay">
-                <img src="./images/laptop.jpg" alt="Ноутбук" width="370" />
+                <img
+                  src="./images/portfolio-mob.jpg"
+                  alt="Ноутбук"
+                  width="370"
+                />
                 <p class="portfolio-card__text">
                   Технокряк это современная площадка распространения
                   коронавируса. Компании используют эту платформу для цифрового
@@ -250,66 +314,68 @@
     </section>
     <footer class="footer">
       <div class="container footer__container">
-        <div class="logo-address">
-          <a class="logo footer-logo logo--inverse" href="./index.html"
-            ><span class="logo__text">Web</span>Studio</a
-          >
-          <address>
-            <ul class="address">
-              <li class="address__item">
-                <a
-                  class="address__link address__link--white"
-                  href="https://goo.gl/maps/RKwU9FnVd64jDv186"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  >Киев, пр-т Леси Украинки, 26</a
-                >
+        <div class="tablet-wrap">
+          <div class="logo-address">
+            <a class="logo footer-logo logo--inverse" href="./index.html"
+              ><span class="logo__text">Web</span>Studio</a
+            >
+            <address>
+              <ul class="address">
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--white"
+                    href="https://goo.gl/maps/RKwU9FnVd64jDv186"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >Киев, пр-т Леси Украинки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="mailto:info@example.com"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a class="address__link" href="tel:+380991111111"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="subscribe footer-subscribe">
+            <h2 class="subscribe__title">Присоединяйтесь</h2>
+            <ul class="socials">
+              <li class="socials__item">
+                <a class="socials__link footer-socials__link" href="">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="mailto:info@example.com"
-                  >info@example.com</a
-                >
+              <li class="socials__item">
+                <a class="socials__link footer-socials__link" href="">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="address__item">
-                <a class="address__link" href="tel:+380991111111"
-                  >+38 099 111 11 11</a
-                >
+              <li class="socials__item">
+                <a class="socials__link footer-socials__link" href="">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="socials__item">
+                <a class="socials__link footer-socials__link" href="">
+                  <svg class="socials__icon">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
-        </div>
-        <div class="subscribe footer-subscribe">
-          <h2 class="subscribe__title">Присоединяйтесь</h2>
-          <ul class="socials">
-            <li class="socials__item">
-              <a class="socials__link footer-socials__link" href="">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link footer-socials__link" href="">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link footer-socials__link" href="">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="socials__item">
-              <a class="socials__link footer-socials__link" href="">
-                <svg class="socials__icon">
-                  <use href="./images/icons.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
+          </div>
         </div>
 
         <form class="footer-form">
@@ -334,5 +400,6 @@
         </form>
       </div>
     </footer>
+    <script src="./script/mob-menu.js"></script>
   </body>
 </html>
