@@ -110,7 +110,7 @@
   &:focus {
     outline: 1px solid var(--accent-color);
 }
-  &:focus + .modal-icon {
+  &:focus + .modal-input__icon {
     fill: var(--accent-color);
 }
 }
@@ -178,6 +178,7 @@
   margin-right: 7px;
   display: flex;
   align-items: center;
+  align-self: center;
 }
 
 
